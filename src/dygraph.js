@@ -2477,7 +2477,7 @@ Dygraph.prototype.computeYAxisRanges_ = function(extremes) {
   var ypadCompat, span, series, ypad;
 
   var p_axis;
-
+//this.attributes_.series_
   // Compute extreme values, a span and tick marks for each axis.
   for (var i = 0; i < numAxes; i++) {
     var axis = this.axes_[i];

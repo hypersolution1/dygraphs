@@ -290,7 +290,8 @@ DygraphLayout.prototype._evaluateLineTicks = function() {
   }
 
   this.yticks = [];
-  for (i = 0; i < this.yAxes_.length; i++ ) {
+  var numYAxes = 1; //this.yAxes_.length
+  for (i = 0; i < numYAxes; i++ ) {
     var axis = this.yAxes_[i];
     for (var j = 0; j < axis.ticks.length; j++) {
       tick = axis.ticks[j];

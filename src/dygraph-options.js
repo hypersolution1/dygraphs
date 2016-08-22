@@ -145,7 +145,7 @@ DygraphOptions.prototype.reparseSeries = function() {
   for (var idx = 0; idx < this.labels_.length; idx++) {
     var seriesName = this.labels_[idx];
     var optionsForSeries = seriesDict[seriesName] || {};
-    var yAxis = DygraphOptions.axisToIndex_(optionsForSeries["axis"]);
+    var yAxis = idx; //DygraphOptions.axisToIndex_(optionsForSeries["axis"]) || idx;
 
     this.series_[seriesName] = {
       idx: idx,

@@ -258,7 +258,8 @@ Legend.generateLegendHTML = function(g, x, sel_points, oneEmWidth, row) {
     var num_axes = g.numAxes();
     for (var i = 0; i < num_axes; i++) {
       // TODO(danvk): remove this use of a private API
-      yOptViews[i] = g.optionsViewForAxis_('y' + (i ? 1 + i : ''));
+      //yOptViews[i] = g.optionsViewForAxis_('y' + (i ? 1 + i : ''));
+	  yOptViews[i] = g.optionsViewForAxis_('y');
     }
 
     var showZeros = g.getOption('labelsShowZeroValues');

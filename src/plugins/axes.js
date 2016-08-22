@@ -62,7 +62,7 @@ axes.prototype.layout = function(e) {
     e.reserveSpaceBottom(h);
   }
 
-  if (g.numAxes() == 2) {
+  /*if (g.numAxes() == 2) {
     if (g.getOptionForAxis('drawAxis', 'y2')) {
       var w = g.getOptionForAxis('axisLabelWidth', 'y2') + 2 * g.getOptionForAxis('axisTickSize', 'y2');
       e.reserveSpaceRight(w);
@@ -70,7 +70,7 @@ axes.prototype.layout = function(e) {
   } else if (g.numAxes() > 2) {
     g.error('Only two y-axes are supported at this time. (Trying ' +
             'to use ' + g.numAxes() + ')');
-  }
+  }*/
 };
 
 axes.prototype.detachLabels = function() {
